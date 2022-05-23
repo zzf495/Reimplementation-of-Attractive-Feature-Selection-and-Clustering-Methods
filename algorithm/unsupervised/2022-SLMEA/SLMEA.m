@@ -21,9 +21,9 @@ function [results,results_iter,W]=SLMEA(X,Y,options)
     options=defaultOptions(options,...
                 'T',10,...      %% The iterations
                 'dim',80,...    %% The dimension selected
-                'alpha',1,...   %% The weight of NMF w.r.t features |X'-X'WH|
-                'beta',0.1,...  %% The weight of L(2,1/2)-(1/2) norm
-                'gamma',0.01,...%% The weight of manfiold regularization
+                'alpha',1e-3,...   %% The weight of NMF w.r.t features |X'-X'WH|
+                'beta',0.01,...  %% The weight of L(2,1/2)-(1/2) norm
+                'gamma',100,...%% The weight of manfiold regularization
                 'lambda',1);    %% The weight of entropy
     %% parameters
     T=options.T;
