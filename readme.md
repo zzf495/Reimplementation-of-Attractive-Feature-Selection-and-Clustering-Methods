@@ -30,7 +30,11 @@ This repository integrates the codes for some **feature selection & clustering**
 
 #### - Supervised Methods
 
-> It will be available soon.
+- 2019-RSLDA [[7]](https://ieeexplore.ieee.org/abstract/document/8272002): Robust Sparse Linear Discriminant Analysis.
+
+- 2021-DSDPL [[8]](https://www.sciencedirect.com/science/article/pii/S0031320320303848): Dual subspace discriminative projection learning
+
+  > I achieves 90% accuracy on `AR_Face` with 560-dimensions, while the authors adopt 540-dimensions for experiments. The results of the codes may not be consistent with the paper.
 
 ---
 
@@ -72,3 +76,6 @@ This repository integrates the codes for some **feature selection & clustering**
 
 [6] Shang, Ronghua, et al. "Sparse and low-dimensional representation with maximum entropy adaptive graph for feature selection." *Neurocomputing* 485 (2022): 57-73.
 
+[7] J. Wen et al., "Robust Sparse Linear Discriminant Analysis," in IEEE Transactions on Circuits and Systems for Video Technology, vol. 29, no. 2, pp. 390-403, Feb. 2019, doi: 10.1109/TCSVT.2018.2799214.
+
+[8] Belous, Gregg, Andrew Busch, and Yongsheng Gao. "Dual subspace discriminative projection learning." *Pattern Recognition* 111 (2021), doi: 10.1016/j.patcog.2020.107581.
