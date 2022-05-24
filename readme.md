@@ -34,7 +34,7 @@ This repository integrates the codes for some **feature selection & clustering**
 
 - 2021-DSDPL [[8]](https://www.sciencedirect.com/science/article/pii/S0031320320303848): Dual subspace discriminative projection learning
 
-  > I achieves 90% accuracy on `AR_Face` with 560-dimensions, while the authors adopt 540-dimensions for experiments. The results of the codes may not be consistent with the paper.
+  > I achieve 90% accuracy on `AR_Face` with 560-dimensions, while the authors adopt 540-dimensions for experiments. The results of the codes may not be consistent with the paper.
 
 ---
 
