@@ -13,7 +13,7 @@ function [X_new,resultsFinal] = getFeatureSelectionResults(X,Y,W,dim,C,options)
         options=struct();
     end
     if nargin<=4
-       C=lenght(unique(Y)); 
+       C=length(unique(Y)); 
     end
     options=defaultOptions(options,...
                 'T',10,...     %% The repeat times of kmeans

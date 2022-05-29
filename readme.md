@@ -2,7 +2,7 @@
 
 # The Re-implementation of Feature Selection & Clustering Methods
 
-This repository integrates the codes for some **feature selection & clustering** methods. I know how hard it is to reproduce the codes, especially for beginners, and I hope it can help.
+This repository integrates the codes for some **feature selection, clustering and subspace learning** methods. I know how hard it is to reproduce the codes, especially for beginners, and I hope it can help.
 
 - If you find any errors or need any help in reproducing the code, please feel free to contact me. 
 
@@ -26,19 +26,15 @@ This repository integrates the codes for some **feature selection & clustering**
 
 ## The codes exist in the repository
 
-### Feature Selection
+### 1. Feature Selection
 
-#### - Supervised Methods
+#### 1.1 Supervised Methods
 
-- 2019-RSLDA [[7]](https://ieeexplore.ieee.org/abstract/document/8272002): Robust Sparse Linear Discriminant Analysis.
-
-- 2021-DSDPL [[8]](https://www.sciencedirect.com/science/article/pii/S0031320320303848): Dual subspace discriminative projection learning
-
-  > I achieve 90% accuracy on `AR_Face` with 560-dimensions, while the authors adopt 540-dimensions for experiments. The results of the codes may not be consistent with the paper.
+- 2021-DSDPL [[8]](https://www.sciencedirect.com/science/article/pii/S0031320320303848): Dual subspace discriminative projection learning.
 
 ---
 
-#### - Unsupervised Methods
+#### 1.2 Unsupervised Methods
 
 - 2019-LRLMR [[1]](https://www.sciencedirect.com/science/article/pii/S0893608019301212): Unsupervised feature selection via latent representation learning and manifold regularization.
 
@@ -58,9 +54,27 @@ This repository integrates the codes for some **feature selection & clustering**
 
 ---
 
-## Clustering & Other
+## 2. Clustering
 
 >  The codes will be available soon.
+
+## 3. Representation & Subspace Learning
+
+#### 3.1 Supervised Methods
+
+- 2017-MRSL [[9]](https://ieeexplore.ieee.org/abstract/document/8128909/): Marginal Representation Learning With Graph Structure Self-Adaptation.
+
+  > Official codes are available at https://github.com/DarrenZZhang/MSRL.
+
+- 2019-RSLDA [[7]](https://ieeexplore.ieee.org/abstract/document/8272002): Robust Sparse Linear Discriminant Analysis.
+
+- 2020-LRDAGP [[10]](https://link.springer.com/article/10.1007/s11063-020-10340-6): Low-Rank Discriminative Adaptive Graph Preserving Subspace Learning.
+
+- 2021-SN-TSL [[11]](https://www.sciencedirect.com/science/article/abs/pii/S016516842100027X) :Sparse non-negative transition subspace learning for image classification.
+
+#### 3.2 Unsupervised Methods
+
+> The codes will be available soon.
 
 # Reference
 
@@ -79,3 +93,9 @@ This repository integrates the codes for some **feature selection & clustering**
 [7] J. Wen et al., "Robust Sparse Linear Discriminant Analysis," in IEEE Transactions on Circuits and Systems for Video Technology, vol. 29, no. 2, pp. 390-403, Feb. 2019, doi: 10.1109/TCSVT.2018.2799214.
 
 [8] Belous, Gregg, Andrew Busch, and Yongsheng Gao. "Dual subspace discriminative projection learning." *Pattern Recognition* 111 (2021), doi: 10.1016/j.patcog.2020.107581.
+
+[9] Zhang, Zheng, et al. "Marginal representation learning with graph structure self-adaptation." *IEEE Transactions on Neural Networks and Learning Systems* 29.10 (2017): 4645-4659.
+
+[10] Du, Haishun, et al. "Low-rank discriminative adaptive graph preserving subspace learning." *Neural Processing Letters* 52.3 (2020): 2127-2149.
+
+[11] Chen, Zhe, et al. "Sparse non-negative transition subspace learning for image classification." *Signal Processing* 183 (2021), doi: 10.1016/j.sigpro.2021.107988.

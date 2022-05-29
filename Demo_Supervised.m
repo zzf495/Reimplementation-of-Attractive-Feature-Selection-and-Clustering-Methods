@@ -5,10 +5,10 @@ rng(495);
 %% Load the dataclear X Y;
 
 
-%%% Load COIL20
-% path='./COIL20.mat';
-% load(path,'X','Y');
-% X=X';%% The input dimension is m*n
+%% Load COIL20
+path='./COIL20.mat';
+load(path,'X','Y');
+X=X';%% The input dimension is m*n
 
 
 %%% Load AR_Face_img
@@ -35,10 +35,11 @@ number=10;
 
 
 %% Select a algorithm
-% algorithm=@RSLDA;
+% algorithm=@MRSL;
 % algorithm=@DSDPL; X=double(zscore(X',1))';
-
-
+% algorithm=@RSLDA;
+% algorithm=@LRDAGP;
+algorithm=@SN_TSL;
 %% Set the hyper-parameters
 %%% Notice: you should modify `options`, so as to tune the hyper-parameters
 options=struct();
