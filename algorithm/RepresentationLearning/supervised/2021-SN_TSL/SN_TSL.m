@@ -66,7 +66,7 @@ function [results,results_iter,QW]=SN_TSL(trainX,trainY,testX,testY,options)
         Zs=QW*trainX; 
         Zt=QW*testX;
         Ytpseudo=classifyKNN(Zs,trainY,Zt,1);
-        results=MyClusteringMeasure(testY,Ytpseudo);%[ACC MIhat Purity]';
+        results=MyClusteringMeasure(testY,Ytpseudo,1);%[ACC MIhat Purity]';
         for index=1:3
             results_iter(index,i)=results(index);
         end

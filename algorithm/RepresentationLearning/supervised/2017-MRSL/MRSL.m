@@ -78,7 +78,7 @@ function [results,results_iter,W]=MRSL(trainX,trainY,testX,testY,options)
         % Update P by Eq.(36)
         distF=   EuDist2(F',F');
         [P,~]=similarMatrix_CAN(distF,k,rr);
-        results=MyClusteringMeasure(testY,Ytpseudo);%[ACC ACC2 MIhat Purity]';
+        results=MyClusteringMeasure(testY,Ytpseudo,1);%[ACC ACC2 MIhat Purity]';
         for index=1:3
             results_iter(index,i)=results(index);
         end

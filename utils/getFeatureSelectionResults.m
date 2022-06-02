@@ -18,7 +18,8 @@ function [X_new,resultsFinal] = getFeatureSelectionResults(X,Y,W,dim,C,options)
     options=defaultOptions(options,...
                 'T',10,...     %% The repeat times of kmeans
                 'MaxIter',100,... %% Options of 'litekmeans'
-                'Replicates',10); %% Options of 'litekmeans'
+                'Replicates',10,...%% Options of 'litekmeans'
+                'supervisedFlag',0); %% Options of 'MyClusteringMeasure'
     score=sum((W.*W),2);
     [~,index]=sort(score,'descend');
     X_new = X(index(1:dim),:);

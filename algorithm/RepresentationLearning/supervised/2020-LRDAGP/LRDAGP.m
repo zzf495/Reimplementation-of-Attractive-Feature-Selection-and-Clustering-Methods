@@ -67,7 +67,7 @@ function [results,results_iter,P]=LRDAGP(trainX,trainY,testX,testY,options)
         % Classification
         Zt=real(P'*testX);
         Ytpseudo=classifyKNN(Zs,trainY,Zt,1);
-        results=MyClusteringMeasure(testY,Ytpseudo);%[ACC MIhat Purity]';
+        results=MyClusteringMeasure(testY,Ytpseudo,1);%[ACC MIhat Purity]';
         for index=1:3
             results_iter(index,i)=results(index);
         end

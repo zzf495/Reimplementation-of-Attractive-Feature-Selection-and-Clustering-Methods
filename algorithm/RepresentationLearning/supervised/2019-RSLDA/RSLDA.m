@@ -82,7 +82,7 @@ function [results,results_iter,Q]=RSLDA(trainX,trainY,testX,testY,options)
         Zs=Z(:,1:n1);
         Zt=Z(:,n1+1:end);
         Ytpseudo=classifyKNN(Zs,trainY,Zt,1);
-        results=MyClusteringMeasure(testY,Ytpseudo);%[ACC ACC2 MIhat Purity]';
+        results=MyClusteringMeasure(testY,Ytpseudo,1);%[ACC ACC2 MIhat Purity]';
         for index=1:3
             results_iter(index,i)=results(index);
         end

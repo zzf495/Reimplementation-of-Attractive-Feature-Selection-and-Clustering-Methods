@@ -1,11 +1,21 @@
-function result = MyClusteringMeasure(Y, predY)
-
+function result = MyClusteringMeasure(Y, predY,supervisedFlag)
+%% input
+%%%     Y                   The ground-truth labels
+%%%     predY               The predict labels
+%%%     supervisedFlag      The supervised flag
+%%%%                     -  1   Use `length(find(predY==Y))/length(Y)` to calculate acc
+%%%%                     -  0   Use `bestMap` to calculate acc
+%% Output
+%%% result               -  a list with [acc,NMI,Purity]
+if nargin<=2
+   supervisedFlag=0; 
+end
 if size(Y,2) ~= 1
     Y = Y';
-end;
+end
 if size(predY,2) ~= 1
     predY = predY';
-end;
+end
 
 n = length(Y);
 
@@ -15,9 +25,9 @@ Y0 = zeros(n,1);
 if nclass ~= max(Y)
     for i = 1:nclass
         Y0(find(Y == uY(i))) = i;
-    end;
+    end
     Y = Y0;
-end;
+end
 
 uY = unique(predY);
 nclass = length(uY);
@@ -25,9 +35,9 @@ predY0 = zeros(n,1);
 if nclass ~= max(predY)
     for i = 1:nclass
         predY0(find(predY == uY(i))) = i;
-    end;
+    end
     predY = predY0;
-end;
+end
 
 
 Lidx = unique(Y); classnum = length(Lidx);
@@ -54,13 +64,10 @@ ACC = length(find(Y == res))/length(Y); % acc used for unsupervised methods
 % NMI
 MIhat = MutualInfo(Y,res);
 
-
-% ACC2=length(find(predY==Y))/length(Y);% acc used for supervised methods
+if supervisedFlag==1
+    ACC=length(find(predY==Y))/length(Y);% acc used for supervised methods
+end
 result = [ACC MIhat Purity]';%% 3*1 vector
-
-
-
-
 
 %%
 function [newL2, c] = bestMap(L1,L2)
