@@ -26,7 +26,7 @@ function [X_new,resultsFinal] = getFeatureSelectionResults(X,Y,W,dim,C,options)
     resultsAll=[];
     for i=1:options.T
         Ypseudo=litekmeans(X_new',C,'MaxIter',options.MaxIter,'Replicates',options.Replicates);
-        results=MyClusteringMeasure(Y,Ypseudo);%[ACC ACC2 MIhat Purity]';
+        results=MyClusteringMeasure(Y,Ypseudo,options.supervisedFlag);%[ACC ACC2 MIhat Purity]';
         resultsAll=[resultsAll,results];
     end
     resultsFinal=mean(resultsAll,2);
