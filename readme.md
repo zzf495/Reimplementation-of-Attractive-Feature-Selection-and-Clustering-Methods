@@ -30,7 +30,7 @@ This repository integrates the codes for some **feature selection, clustering an
 
 #### 1.1 Supervised Methods
 
-- 2021-DSDPL [[8]](https://www.sciencedirect.com/science/article/pii/S0031320320303848): Dual subspace discriminative projection learning.
+> The codes will be available soon.
 
 ---
 
@@ -70,7 +70,11 @@ This repository integrates the codes for some **feature selection, clustering an
 
 - 2020-LRDAGP [[10]](https://link.springer.com/article/10.1007/s11063-020-10340-6): Low-Rank Discriminative Adaptive Graph Preserving Subspace Learning.
 
+- 2020-RDA_FSIS [[12]](https://www.sciencedirect.com/science/article/abs/pii/S0893608020301386): Linear embedding by joint Robust Discriminant Analysis and Inter-class Sparsity
+
 - 2021-SN-TSL [[11]](https://www.sciencedirect.com/science/article/abs/pii/S016516842100027X) :Sparse non-negative transition subspace learning for image classification.
+
+- 2021-DSDPL [[8]](https://www.sciencedirect.com/science/article/pii/S0031320320303848): Dual subspace discriminative projection learning.
 
 #### 3.2 Unsupervised Methods
 
@@ -99,3 +103,5 @@ This repository integrates the codes for some **feature selection, clustering an
 [10] Du, Haishun, et al. "Low-rank discriminative adaptive graph preserving subspace learning." *Neural Processing Letters* 52.3 (2020): 2127-2149.
 
 [11] Chen, Zhe, et al. "Sparse non-negative transition subspace learning for image classification." *Signal Processing* 183 (2021), doi: 10.1016/j.sigpro.2021.107988.
+
+[12] Dornaika, Fadi, and A. Khoder. "Linear embedding by joint robust discriminant analysis and inter-class sparsity." *Neural Networks* 127 (2020): 141-159.
