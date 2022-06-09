@@ -56,7 +56,7 @@ This repository integrates the codes for some **feature selection, clustering an
 
 ## 2. Clustering
 
->  The codes will be available soon.
+- 2015-rLPP [[13]](https://www.aaai.org/ocs/index.php/AAAI/AAAI15/paper/viewPaper/9921): Learning Robust Locality Preserving Projection via p-Order Minimization.
 
 ## 3. Representation & Subspace Learning
 
@@ -70,7 +70,7 @@ This repository integrates the codes for some **feature selection, clustering an
 
 - 2020-LRDAGP [[10]](https://link.springer.com/article/10.1007/s11063-020-10340-6): Low-Rank Discriminative Adaptive Graph Preserving Subspace Learning.
 
-- 2020-RDA_FSIS [[12]](https://www.sciencedirect.com/science/article/abs/pii/S0893608020301386): Linear embedding by joint Robust Discriminant Analysis and Inter-class Sparsity
+- 2020-RDA_FSIS [[12]](https://www.sciencedirect.com/science/article/abs/pii/S0893608020301386): Linear embedding by joint Robust Discriminant Analysis and Inter-class Sparsity.
 
 - 2021-SN-TSL [[11]](https://www.sciencedirect.com/science/article/abs/pii/S016516842100027X) :Sparse non-negative transition subspace learning for image classification.
 
@@ -78,7 +78,9 @@ This repository integrates the codes for some **feature selection, clustering an
 
 #### 3.2 Unsupervised Methods
 
-> The codes will be available soon.
+- 2020-JLRSL [[14]](https://www.sciencedirect.com/science/article/pii/S0950705120301428): Joint low-rank representation and spectral regression for robust subspace learning.
+
+
 
 # Reference
 
@@ -105,3 +107,7 @@ This repository integrates the codes for some **feature selection, clustering an
 [11] Chen, Zhe, et al. "Sparse non-negative transition subspace learning for image classification." *Signal Processing* 183 (2021), doi: 10.1016/j.sigpro.2021.107988.
 
 [12] Dornaika, Fadi, and A. Khoder. "Linear embedding by joint robust discriminant analysis and inter-class sparsity." *Neural Networks* 127 (2020): 141-159.
+
+[13] Wang, Hua, Feiping Nie, and Heng Huang. "Learning robust locality preserving projection via p-order minimization." In *Twenty-Ninth AAAI Conference on Artificial Intelligence*. 2015.
+
+[14] Peng, Yong, Leijie Zhang, Wanzeng Kong, Feiwei Qin, and Jianhai Zhang. "Joint low-rank representation and spectral regression for robust subspace learning." *Knowledge-Based Systems* 195 (2020), doi: 10.1016/j.knosys.2020.105723.
